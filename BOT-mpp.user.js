@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name         BOT-mpp
 // @namespace    https://vscode.dev/?connectTo=tampermonkey
+// @updateURL    https://raw.githubusercontent.com/gtnntg12/userscript-bot-mpp/main/BOT-mpp.user.js
+// @downloadURL  https://raw.githubusercontent.com/gtnntg12/userscript-bot-mpp/main/BOT-mpp.user.js
 // @version      0.9.0
 // @description  none
 // @author       ◄Кот►*∂০ϭρыũ* - gtnntg12
@@ -35,6 +37,7 @@ if (cmd == '/help') {
 //----------------задаём значение перед  полезными командами
 // Создаем синоним для MPP.chat.send() с более коротким именем send();
 const send = MPP.chat.send;
+send();
 //---------------полезные команды -----------------
 
 if (cmd == '/msg') {
