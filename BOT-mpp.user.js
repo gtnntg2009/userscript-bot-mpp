@@ -7,7 +7,7 @@
 // @description  none
 // @author       ◄Кот►*∂০ϭρыũ* - gtnntg12
 // @match        *://mpp.hyye.tk/*
-// @match        *://multiplayerpiano.net/*
+// @match        *://*multiplayerpiano.net/*
 // @match        *://mppclone.com/*
 // @match        *://playground-mpp.hyye.tk/*
 // @grant        none
