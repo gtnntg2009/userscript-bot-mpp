@@ -38,9 +38,10 @@ MPP.client.on("a", function(msg) {
         sendBot('Fun: /qwerty, /capybara, /answer, /uwu, /owo.');
     }
     //----------------задаём значение перед  полезными командами
-    // Создаем синоним для MPP.chat.send () с более коротким именем
-    const sendBot = MPP.chat.send;
-    sendBot();
+    // Создаем функцию sendBot, которая является синонимом для MPP.chat.send
+function sendBot(message) {
+    MPP.chat.send(message);
+}
     //---------------полезные команды -----------------
 
     if (cmd == '/msg') {
