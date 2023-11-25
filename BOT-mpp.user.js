@@ -24,6 +24,10 @@ MPP.client.on("a", function(msg) {
     const botid = '1e698c17114da72c3dcde22a';
     //-----это нужно для категории админские команды---
     const ISadmin = admins.indexOf(msg.p._id) !== -1;
+    // Создаем функцию sendBot, которая является синонимом для MPP.chat.send
+    function sendBot(message) {
+        MPP.chat.send(message);
+    }
 
     // Это команда отдельно от остальных  для лёгкого редактирования
     switch (cmd) {
@@ -105,11 +109,7 @@ MPP.client.on("a", function(msg) {
           break;
       }
 
-    // Создаем функцию sendBot, которая является синонимом для MPP.chat.send
-    function sendBot(message) {
-        MPP.chat.send(message);
-    }
-
+    
     //----------- авто отправка и прочее ---------
     switch (cmd) {
         case 'hi':
